@@ -65,7 +65,7 @@ public class Dictionary {
 	private Configuration cfg;
 	
 	private Dictionary(Configuration cfg){
-		this.cfg = cfg;
+        this.cfg = cfg;
 		this.loadMainDict();
 		this.loadStopWordDict();
 		this.loadQuantifierDict();
@@ -80,10 +80,10 @@ public class Dictionary {
 	 * @return Dictionary
 	 */
 	public static Dictionary initial(Configuration cfg){
-		if(singleton == null){
+        if(singleton == null){
 			synchronized(Dictionary.class){
 				if(singleton == null){
-					singleton = new Dictionary(cfg);
+                    singleton = new Dictionary(cfg);
 					return singleton;
 				}
 			}

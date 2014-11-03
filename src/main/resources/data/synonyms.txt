@@ -1,1 +1,2 @@
-tofel => 托福
+toefl => 托福
+ielts => 雅思
