@@ -50,7 +50,7 @@ public class IKAnalzyerDemo {
 		//获取Lucene的TokenStream对象
 	    TokenStream ts = null;
 		try {
-			ts = analyzer.tokenStream("myfield", new StringReader("这是一个中文TOEFL分词奥数的例子，你可以直接运行它！IKAnalyer can analysis english text too"));
+			ts = analyzer.tokenStream("myfield", new StringReader("物理老师数学数学老师"));
 			//获取词元位置属性
 		    OffsetAttribute  offset = ts.addAttribute(OffsetAttribute.class); 
 		    //获取词元文本属性
