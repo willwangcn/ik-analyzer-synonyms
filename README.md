@@ -31,7 +31,7 @@ add the following config in your pom.xml
 
 在ik-analyzer的基础上增加同义词filter，可以在索引时将同义词索引。
 新增的类IKSynonymAnalyzer
-同义词库放在data/synonyms.txt
+同义词库放在data/synonyms.txt 如果使用maven,放在resources目录或者项目的data/synonyms.txt下即可
 
 #### data/synonyms.txt 配置方法
 ##### 通过,分割的可拓展同义词
@@ -40,7 +40,9 @@ add the following config in your pom.xml
 ##### 通过=>收缩的不可拓展同义词
 比如“采用,采纳  => 采取”代表这三个词同义，并且无视expand参数，统一会被替换为“采取”
 
-默认是Lucene 4.9版本,使用其他版本请重新编译
+默认是Lucene 4.9版本,使用其他版本请重新编译.
+
+使用示例代码如下:
 
 ``` java
 
