@@ -4,32 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ikanalyzer</groupId>
+    <groupId>com.willwang.lucene</groupId>
     <artifactId>ik-analyzer-synonym</artifactId>
-    <version>4.9</version>
+    <version>4.9.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lucene.version>4.9.0</lucene.version>
+        <github.global.server>github</github.global.server>
     </properties>
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>local private nexus</name>
-            <url>http://maven.oschina.net/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>nexus-osc</id>
-            <name>Nexus osc</name>
-            <url>http://maven.oschina.net/content/repositories/thirdparty/</url>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.apache.lucene</groupId>
@@ -46,11 +29,7 @@
             <artifactId>lucene-queryparser</artifactId>
             <version>${lucene.version}</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
+
     </dependencies>
 
 </project>
